@@ -1,3 +1,11 @@
+### How to Start?
+```dart run lib/calculator.dart```
+
+
+
+[console img]
+![img.png](img.png)
+
 [요구사항]
 
 0. [] 마감기한 : 2024-07-27 16:46
