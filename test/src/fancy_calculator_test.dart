@@ -1,10 +1,14 @@
 import 'package:fancy_calculator/calculator.dart';
-import 'package:fancy_calculator/src/fancy_calculator.dart';
 import 'package:test/test.dart';
 
 void main() {
   group('Fancy Calculator test', () {
     final calculator = FancyCalculator();
+
+    test('initial result test', () {
+      // then
+      expect(calculator.result, "0");
+    });
 
     group('Operand test', () {
       test('int Addition test', () {
