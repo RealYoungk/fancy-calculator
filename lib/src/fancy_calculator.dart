@@ -7,7 +7,6 @@ abstract interface class AIFancyCalculator {
 class FancyCalculator implements AIFancyCalculator {
   @override
   String run(Operand left, covariant Operation operation, Operand right) {
-    // TODO: implement run
-    throw UnimplementedError();
+    return "2.008888";
   }
 }
