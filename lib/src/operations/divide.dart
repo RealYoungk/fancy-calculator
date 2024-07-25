@@ -1,4 +1,4 @@
-mixin Division {
+mixin Divide {
   num divide(
     num a,
     num b, {

@@ -1,4 +1,4 @@
-mixin Multiplication {
+mixin Multiply {
   num multiply(
     num a,
     num b, {

@@ -1,4 +1,4 @@
-mixin Subtraction {
+mixin Subtract {
   num subtract(
     num a,
     num b, {

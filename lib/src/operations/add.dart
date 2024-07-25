@@ -1,4 +1,4 @@
-mixin Addition {
+mixin class Add {
   num add(
     num a,
     num b, {
