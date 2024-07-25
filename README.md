@@ -1,41 +1,20 @@
-<!-- 
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+[요구사항]
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages). 
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages). 
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
-
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
-
-```dart
-const like = 'sample';
-```
-
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
-# fancy-calculator
-# fancy-calculator
+1. 삼각함수, 미적분, 로그함수 확장성 => Operand? Operation Operand 연산이 필요할 수 있다.
+2. 테스트와 객체지향에 집중해서 코딩
+3. 연산기능 지원
+   3-1. 덧셈
+   3-2. 뺄셈
+   3-3. 곱셈
+   3-4. 나눗셈
+   3-5. 연산자 ::= +, -, *, /
+4. 피연산자 지원
+   4-1. 0-9 사이의 문자가 1개 이상 있어야한다
+   4-2. 소숫점이 0개 또는 1개 존재한다
+   4-3. 0-9 사이의 숫자가 0개 이상 반복된다
+   4-4. 1000 단위 구분 기호 없음
+5. 입력
+   5-1. 피연산자 연산자 피연산자
+6. 출력
+   6-1. 1000 단위 구분 기호 없음
+   6-2. 결과를 콘솔에 출력한다
