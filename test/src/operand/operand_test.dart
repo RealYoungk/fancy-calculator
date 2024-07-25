@@ -4,8 +4,6 @@ import 'package:test/test.dart';
 void main() {
   test('Operand test', () {
     // given
-    final regExpSource = r'[0-9]+[.]?[0-9]*';
-    final regExp = RegExp(regExpSource);
 
     // when
     Operand operand1 = Operand("5");
@@ -15,10 +13,10 @@ void main() {
     Operand operand5 = Operand(".");
 
     // then
-    expect(regExp.hasMatch(operand1.value), true);
-    expect(regExp.hasMatch(operand2.value), true);
-    expect(regExp.hasMatch(operand3.value), true);
-    expect(regExp.hasMatch(operand4.value), true);
-    expect(regExp.hasMatch(operand5.value), false);
+    expect(operand1.number, 5);
+    expect(operand2.number, 0);
+    expect(operand3.number, 0.1);
+    expect(operand4.number, 1.0);
+    expect(() => operand5.number, throwsA(isA<ArgumentError>()));
   });
 }

@@ -1,6 +1,8 @@
-import 'operations.dart';
-
-class Addition implements Operation {
-  @override
-  String get value => "+";
+mixin Addition {
+  num add(
+    num a,
+    num b, {
+    int precision = 8,
+  }) =>
+      num.parse((a + b).toStringAsFixed(precision));
 }

@@ -1,12 +1,18 @@
 import 'package:fancy_calculator/calculator.dart';
 
-abstract interface class AIFancyCalculator {
-  String run(Operand left, covariant Operation operation, Operand right);
-}
-
-class FancyCalculator implements AIFancyCalculator {
-  @override
-  String run(Operand left, covariant Operation operation, Operand right) {
-    return "2.008888";
+class FancyCalculator with Addition, Subtraction, Multiplication, Division {
+  num calculate(num a, num b, String operation) {
+    switch (operation) {
+      case '+':
+        return add(a, b);
+      case '-':
+        return subtract(a, b);
+      case '*':
+        return multiply(a, b);
+      case '/':
+        return divide(a, b);
+      default:
+        throw ArgumentError('Invalid operation: $operation');
+    }
   }
 }
